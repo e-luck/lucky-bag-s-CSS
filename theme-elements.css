@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/* ________________
+*color scheme
+*
+*
+*________________ */
+
+html, body, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, div, p, blockquote, th, td, form, fieldset, input, textarea, pre {
+	font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, 'Times New Roman', serif;
+}
+
+/*html, body, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, div, p, blockquote, th, td, form, fieldset, input, textarea, pre {
+	font-family: 'メイリオ'\9, Meiryo\9, 'ＭＳ Ｐゴシック'\9, sans-serif\9;
+}*/
+
+.page h1 {
+	font-size: 150%;
+}
+
+h2 {
+	font-size: 130%;
+}
+
+h3 {
+	font-size: 120%;
+}
+
+h4 {
+	font-size: 110%;
+}
+
+h5 {
+	font-size: 100%;
+}
+
+h6 {
+	font-size: 100%;
+}
+
+p {
+}
+
+li {
+	padding-left: 20px;
+	background: url(img/listmark.gif) 0 6px no-repeat;
+}
+
+li li {
+	background: url(img/listmark-child.gif) 0 6px no-repeat;
+}
+
+dl {
+
+}
+
+blockquote {
+	padding: 10px 1em 0;
+	background: url(img/quote.png) right -10px no-repeat;
+	_background: url(img/quote.gif) right -10px no-repeat;
+	border-top: 3px double #5a5359;
+	border-bottom: 3px double #5a5359;
+	font-style: oblique;
+}
+
+blockquote[cite]:after {
+	content: "引用元："attr(cite);
+}
+
+pre {
+	padding: 1em;
+	background-color: #5a5359; /* if UA don't support RGBA, use this. */
+	overflow: auto;
+}
+
+pre {
+	background: rgba(90, 83, 89, 0.7); /* CSS3 */
+	_background-color: #5a5359 /* for fuck'in IE6 */
+}
+
+code {
+	color: #fff;
+	font-family: 'Courier New', monospace;
+}
+
+p code {
+	padding: 0 0.5em;
+	background-color: #5a5359; /* if UA does not support RGBA, use this. */
+}
+
+p code {
+	background: rgba(90, 83, 89, 0.7); /* CSS3 */
+	_background-color: #5a5359 /* for fuck'in IE6 */
+}
+
+ins[datetime]:before {
+	content:"\8FFD\8A18 : "attr(datetime);
+}
+
+ins,
+ins p {
+	text-decoration: underline;
+}
+
+del,
+del p {
+	text-decoration: line-through;
+}
+
+q {
+	font-style: oblique;
+}
+
+kbd {
+	padding: 0 0.2em;
+	font-family: Verdana, Arial, sans-serif;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 2px solid #999;
+	border-bottom: 2px solid #999;
+}
+
+em {
+	font-weight: bold;
+}
+
+strong {
+	font-weight: bold;
+	color: #c9171e;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+

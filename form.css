@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* ________________
+*toc
+*
+* 1.comment form
+* 2.search form
+*
+*________________ */
+
+
+/* ________ 1.comment form ________ */
+
+.comment {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+	border-bottom: 1px solid #ddd;
+	background: url(img/noimage.png) 10px 10px no-repeat;
+}
+
+.comment .inner {
+	padding: 10px 10px 0 75px
+}
+
+.comment-header img {
+	padding: 2px;
+	width: 50px;
+	height: 50px;
+	_width: 54px; /* for fuck'in IE6 */
+	_height: 54px; /* for fuck'in IE6 */
+	position: absolute;
+	left: 10px;
+	_left: -65px;
+	_top: 10px;
+	border: 1px solid #ddd;
+}
+
+.comment-footer {
+	text-align: right;
+}
+
+/* ________ 2.search form ________ */
+
+body > #siteSearch { /* ie6 ignore this. */
+	margin-left: 19em; /* evaded site-name overlap. */
+}
+
+#siteSearch {
+	_padding-left: 40px; /* only ie6 render this. */
+}
+
+body > #siteSearch h2 {
+	display: none;
+}
+
+#siteSearch #search {
+	width: 14em;
+}

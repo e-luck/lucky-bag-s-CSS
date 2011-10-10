@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+html {
+	text-align: center; /* for fuck'in IE6 */
+}
+
+body {
+	margin: 0 auto;
+	/* width: 48.74em; fixed layout*/
+	max-width: 60em;
+	min-width: 20em;
+	text-align: left;
+}
+
+#header,
+#newEntreis,
+.article .hentry,
+#subContents,
+.page,
+#search-results,
+#footer {
+	margin: 0 40px;
+}
+
+#subContents > #twitter_div {
+    float: left;
+    width: 45%;
+}
+
+#subContents > #delicious {
+    float: right;
+    width: 45%;
+}
+
+#subContents li {
+	margin-bottom: 0.5em;
+}
+
+#subContents li span {
+	display: block;
+}
+
+/*#subContents > #footer {
+		clear: both;
+}*/
+
+/* ClearFix For modern browsers */
+#subContents:before,
+#subContents:after,
+.page:before,
+.page:after {
+    content:"";
+    display:block;
+    overflow:hidden;
+}
+
+#subContents:after,
+.page:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+#subContents,
+.page {
+    zoom:1;
+}
+
+#archives .page {
+	float: left;
+}
+
+/* ________ globalNav ________ */
+
+#globalNav {
+	margin-left: 19em; /* evaded site-name overlap. */
+	position: absolute; /* see also theme.css->"5.globalNav" */
+	top: 50px;
+	right: 40px;
+	
+}
+
+#globalNav h2 {
+	display: none;
+}
+
+#globalNav li {
+	display: inline;
+	line-height: 1;
+}
+
+/* ________ search form ________ */
+/* see also form.css->"2.search form" */
+
+body > #siteSearch { /* ie6 ignore this. */
+	position: absolute;
+	right: 40px;
+	top: 90px;
+}
+
+*html #siteSearch h2 {
+	margin-right: 40px;
+}

@@ -1,0 +1,339 @@
+@charset "UTF-8";
+
+/* ________________
+*toc
+*
+* 0.@import & html,body
+* 1.header
+* 2.hentry
+*  2-1.metaData
+*  2-2.trackback
+*  2-3.comment
+* 3.globalNav
+* 4.footer
+* 5.about
+* 6.archive
+*________________ */
+
+/* ________________
+*color scheme
+*
+*
+*________________ */
+
+/* ________ 0.@import & html,body ________ */
+
+@import url(theme-elements.css);
+
+
+
+html {
+}
+
+body {
+	background-color: transparent;
+}
+
+html > body { /* ie6 ignore this. */ 
+	position: relative;	/* for globalNav. see also laytout.css->line29 */
+}
+
+/* ________ 1.header ________ */
+
+#header {
+	position: relative;
+	height: 200px;
+}
+
+#site-name {
+	padding-top: 50px;
+}
+
+#site-name a {
+	line-height: 1;
+	font-family: "raleway-1","raleway-2", Helvetica, Arial, san-serif;
+	font-weight: bold;
+	font-size: 400%;
+	color:	#5a5359;
+}
+
+#site-name a:hover {
+	color: #c9171e;
+	text-decoration: none;
+}
+
+/* ________ 2.hentry ________ */
+
+.hentry,
+.entry-content,
+#entryInfo,
+#relatedEntries,
+#trackbacks,
+#comments,
+#social,
+div.page div.section {
+	margin-bottom: 50px;
+}
+
+.hentry,
+.page,
+#subContents {
+	margin-bottom: 150px;
+	padding-bottom: 50px;
+	position:relative;
+	background:#fff;
+}
+
+/*#home .hentry:hover,
+#home .page:hover {
+	margin-top: -15px;
+	margin-left: -20px;
+	margin-right: -20px;
+	padding-top: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+}*/
+
+.page,
+#subContents {
+	margin-bottom: 0;
+}
+
+.hentry:before,
+.hentry:after,
+.page:before,
+.page:after,
+#subContents:before,
+#subContetns:after {
+	content:"";
+	position:absolute; 
+	z-index:-2;
+	clear: both;
+}
+
+.hentry:before,
+.page:before,
+#subContents:before,
+#subContetns:after {
+	-webkit-box-shadow:0 0 15px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 0 15px rgba(0,0,0,0.2);
+	box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+.hentry:before,
+.page:before,
+#subContents:before,
+#subContetns:after {
+	top:50%;
+	bottom:0;
+	left:10px;
+	right:10px;
+	-moz-border-radius:100px / 10px;
+	border-radius:100px / 10px;
+}
+
+
+.entry-title,
+#commentEnd h1 {
+	font-size: 150%;
+	margin-bottom: 1.5em;
+}
+
+#home .hentry:hover,
+.archive-listing .hentry:hover,
+.mt-search-results .hentry:hover {
+}
+
+.hentry img {
+	border: 2px solid #5a5359;
+}
+
+	/* ________ 2-1.metaData ________ */
+		
+	.metaData {
+		color: #5a5359;
+	}
+
+	#home .hentry:hover dl.metaData {
+		color: #000;
+	}
+		
+	.metaData dt {
+		width: 4.6em;
+		_width: 5.3em; /* for fuck'in IE6 */
+		position: relative; /* fuck'in IE6 need this.*/
+	}
+	
+	.metaData dd {
+		margin-top: -1.6em;
+		padding-left: 6em;
+	}
+	
+	.metaData dd p,
+	.metaData dd ul {
+		margin: 0;
+	}
+	
+	.metaData dd li {
+		padding: 0;
+		display: inline;
+		background: none;
+	}
+
+
+	/* ________ 2-2.tarckback ________ */
+.trackback {
+	margin-bottom: 10px;
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.trackback dt {
+	font-weight: bold;
+}
+
+
+
+	/* ________ 2-3.comment ________ */
+.comments-content {
+	margin-bottom: 40px;
+}
+
+
+
+/* ________ 3.globalNav ________ */
+/* see also laytout.css->line25 */
+
+#globalNav a {
+	padding-bottom: 5px;
+	color: #5a5359;
+	font-family: "raleway-1","raleway-2", Helvetica, Arial, san-serif;
+}
+
+#globalNav li {
+	padding: 0 5px;
+	background: none;
+}
+
+#globalNav a:hover,
+li.current a {
+	background: url(img/navback.gif) left bottom no-repeat; /* for fuck'in IE6 */
+	text-decoration: none;
+}
+
+#globalNav > a:hover {
+	background: url(img/navback.png) left bottom no-repeat; /* modern browser render this. */
+}
+
+/* ________ 4.footer ________ */
+
+#footer {
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-family: "raleway-1","raleway-2", Helvetica, Arial, san-serif;
+}
+
+address {
+}
+
+address a {
+}
+
+/* ________ 5.about ________ */
+
+.vcard dl {
+	margin-top: 20px;
+/*  margin: -160px 0 150px 150px*/
+}
+
+.vcard dl dt {
+	padding-left: 20px;
+	width: 8em;
+	background: url(img/listmark.gif) 0 6px no-repeat;
+}
+
+.vcard dl dt:after {
+	content: " : ";
+}
+
+.vcard dl dd {
+	margin-top: -1.6em;
+	margin-left: 10em;
+	padding-left: 1em;
+}
+
+.photo {
+	width: 520px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	_border: none;
+	-webkit-box-shadow: 1px 1px 10px rgba(204,204,204,0.8);
+	-moz-box-shadow: 1px 1px 10px rgba(204, 204, 204, 0.8);
+	box-shadow: 1px 1px 10px rgba(204, 204, 204, 0.8);
+}
+.photo img {
+	padding: 10px 10px 0;
+}
+
+.photo .legend {
+	margin-bottom: 0;
+	padding-right: 10px;
+	width: 510px;
+	font-size: 80%;
+	font-style: italic;
+	text-align:right;
+	color: #888;
+}
+
+.photo .legend a {
+	color: #888;
+	text-decoration: underline;
+}
+
+#feed dt {
+	background: url(img/feed-icon.png) 0 5px no-repeat;
+	padding-left: 20px;
+}
+
+/* ________ 6.archive ________ */
+
+#tagCrowds li a:hover {
+	position: relative;
+	z-index: 1;
+	background-color: #5a5359;
+	color: #fff;
+	text-decoration: none;
+}
+
+#monthlyArchive {
+	width: 25%;
+	_width: 22%;
+	float: left;
+}
+
+#categoryArchive{
+	width: 25%;
+	_width: 22%;
+	float: left;
+}
+
+#tagCrowds {
+	width: 49.9%;
+	_width: 49%;
+	float: left;
+}
+
+#searchResults #tagCrowds {
+	margin: 40px;
+	width: 100%;
+}
+
+* html #globalNav,
+* html #siteSearch,
+#footer {
+	clear: both;
+}

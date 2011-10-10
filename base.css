@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* @import url(fonts.css); temporarily unused. */
+
+/* Font-size Adjustment
+* 10 -> 77
+* 11 -> 85
+* 12 -> 93 (was 93)
+* 13 -> 100
+* 14 -> 108 (was 107)
+* 15 -> 116 (was 114)
+* 16 -> 123.1 (was 122)
+* 17 -> 131 (was 129)
+* 18 -> 138.5 (was 136)
+* 19 -> 146.5 (was 144)
+* 20 -> 153.9 (was 152)
+* 21 -> 161.6 (was 159)
+* 22 -> 167
+* 23 -> 174
+* 24 -> 182
+* 25 -> 189
+* 26 -> 197 
+*/
+
+/* ________ common ________ */
+
+body {
+	font-size: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin-bottom: 0.5em;
+	line-height: 1;
+}
+
+p,
+ul,ol,dl,
+blockquote,
+pre {
+	margin-bottom: 1em;
+	line-height: 1.6;
+}
+
+#tagCrowds li {
+	padding: 0;
+ 	line-height: 1em;
+ 	display: inline;
+	background: none;
+}
+
+#tagCrowds li a {
+	padding: 0 0.2em;
+}
+
+.rank-1 {
+	font-size: 180%;
+}
+
+.rank-2 {
+	font-size: 160%;
+}
+
+.rank-3 {
+	font-size: 140%;
+}
+
+.rank-4 {
+	font-size: 120%;
+}
+
+.rank-6 {
+	font-size: 95%;
+}
+
+.rank-7 {
+	font-size: 90%;
+}
+
+.rank-8 {
+	font-size: 85%;
+}
+
+.rank-9 {
+	font-size: 80%;
+}
+
+.rank-10 {
+	font-size: 75%;
+}
